@@ -41,10 +41,11 @@ hooks:
     # The deploy hook runs after your application has been deployed and started.
     deploy: |
       cd web
-      drush -y cache-rebuild
-      drush -y updatedb
-      drush -y config-import
-      drush -y entup
+      drush si --account-name="admin" --account-pass="admin"
+#      drush -y cache-rebuild
+#      drush -y updatedb
+#      drush -y config-import
+#      drush -y entup
 
 # The configuration of app when it is exposed to the web.
 web:
