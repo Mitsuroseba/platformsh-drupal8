@@ -1,6 +1,6 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "name": "mitsuroseba/platform=sh-d8",
+    "description": "Platform.sh Project Drupal 8 projects with composer",
     "type": "project",
     "license": "GPL-2.0+",
     "authors": [
@@ -13,15 +13,29 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/propeopleua/audit_log.git"
         }
     ],
     "require": {
         "composer/installers": "^1.0.20",
+        "cweagans/composer-patches": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.1",
-        "cweagans/composer-patches": "~1.0",
-        "drupal/core": "~8.0",
-        "drush/drush": "~9.0",
-        "drupal/console": "~1.0"
+        "drupal/coffee": "^1.0@beta",
+        "drupal/config_direct_save": "^1.0",
+        "drupal/config_installer": "^1.0",
+        "drupal/console": "^1",
+        "drupal/core": "^8",
+        "drupal/deploy": "^1.0@beta",
+        "drupal/devel_generate": "^1.2",
+        "drupal/multiversion": "^1.0@beta",
+        "drupal/simple_block": "^1.0@beta",
+        "drush/drush": "~8",
+        "mitsuroseba/audit_log": "~1@dev",
+        "rvtraveller/qs-composer-installer": "^1.1",
+        "webflo/drupal-core-strict": "^8"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -55,6 +69,14 @@
         ]
     },
     "extra": {
+        "patches": {
+            "drupal/core": {
+                "#2788777-97: Allow a profile to be installed from existing config": "https://www.drupal.org/files/issues/2788777-97.patch"
+            },
+            "drupal/multiversion": {
+                "views-integration-problem": "https://www.drupal.org/files/issues/views-integration-2932024-2.patch"
+            }
+        },
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
