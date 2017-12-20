@@ -1,0 +1,10 @@
+name: Curiosity
+type: profile
+description: 'Curiosity profile'
+core: 8.x
+distribution:
+  name: Curiosity
+themes:
+  - bartik
+  - seven
+config_install: true

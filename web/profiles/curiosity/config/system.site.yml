@@ -1,0 +1,14 @@
+uuid: 3a324190-f611-4d58-835f-0ddff62b31d3
+name: curiosity-d8
+mail: valerasebafr1@gmail.com
+slogan: 'Hello Yurii'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
