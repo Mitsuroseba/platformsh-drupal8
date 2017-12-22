@@ -2230,21 +2230,21 @@
         },
         {
             "name": "drupal/multiversion",
-            "version": "1.0.0-beta6",
+            "version": "1.0.0-beta7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/multiversion",
-                "reference": "8.x-1.0-beta6"
+                "reference": "8.x-1.0-beta7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/multiversion-8.x-1.0-beta6.zip",
-                "reference": "8.x-1.0-beta6",
-                "shasum": "a63f7c1a95baca0d5ef504f259275a285d7ec6a2"
+                "url": "https://ftp.drupal.org/files/projects/multiversion-8.x-1.0-beta7.zip",
+                "reference": "8.x-1.0-beta7",
+                "shasum": "6ed865dd1d299894c3b40ec52643ad726b9b33ff"
             },
             "require": {
                 "drupal/conflict": "^1-beta",
-                "drupal/core": "^8.1.0",
+                "drupal/core": "^8.3.0",
                 "drupal/key_value": "^1",
                 "relaxedws/lca": "dev-master"
             },
@@ -2259,8 +2259,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta6",
-                    "datestamp": "1510828090",
+                    "version": "8.x-1.0-beta7",
+                    "datestamp": "1513804984",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -2296,6 +2296,77 @@
             "homepage": "https://www.drupal.org/project/multiversion",
             "support": {
                 "source": "http://cgit.drupalcode.org/multiversion"
+            }
+        },
+        {
+            "name": "drupal/relaxed",
+            "version": "1.0.0-beta6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/relaxed",
+                "reference": "8.x-1.0-beta6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/relaxed-8.x-1.0-beta6.zip",
+                "reference": "8.x-1.0-beta6",
+                "shasum": "b4bb4497f6a6f0ae611bfb3c52eafe2fa8ce0992"
+            },
+            "require": {
+                "drupal/core": "^8.3",
+                "drupal/multiversion": "*",
+                "drupal/replication": "*",
+                "relaxedws/replicator": "dev-master"
+            },
+            "require-dev": {
+                "drupal/encrypt": "*",
+                "drupal/key": "*",
+                "drupal/workspace": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta6",
+                    "datestamp": "1512487384",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "damiankloip",
+                    "homepage": "https://www.drupal.org/user/1037976"
+                },
+                {
+                    "name": "dixon_",
+                    "homepage": "https://www.drupal.org/user/239911"
+                },
+                {
+                    "name": "jeqq",
+                    "homepage": "https://www.drupal.org/user/1427908"
+                },
+                {
+                    "name": "timmillwood",
+                    "homepage": "https://www.drupal.org/user/227849"
+                }
+            ],
+            "description": "Provides a RESTful API that exposes all content entities over UUID endpoints.",
+            "homepage": "https://www.drupal.org/project/relaxed",
+            "support": {
+                "source": "http://cgit.drupalcode.org/relaxed"
             }
         },
         {
@@ -3268,18 +3339,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/propeopleua/audit_log.git",
-                "reference": "81216a9d3fc0f94803488fa6c9507d16780c78e2"
+                "reference": "4ab889aa5fc163b17d2b91b743fbf06bf84d13a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/81216a9d3fc0f94803488fa6c9507d16780c78e2",
-                "reference": "81216a9d3fc0f94803488fa6c9507d16780c78e2",
+                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/4ab889aa5fc163b17d2b91b743fbf06bf84d13a8",
+                "reference": "4ab889aa5fc163b17d2b91b743fbf06bf84d13a8",
                 "shasum": ""
             },
             "require": {
                 "drupal/better_exposed_filters": "^3.0@alpha",
                 "drupal/csv_serialization": "^1.0",
                 "drupal/deploy": "^1.0@beta",
+                "drupal/relaxed": "^1.0@beta",
                 "drupal/views_data_export": "^1.0@alpha"
             },
             "require-dev": {
@@ -3306,7 +3378,7 @@
                 "source": "https://github.com/propeopleua/audit_log/tree/1.x",
                 "issues": "https://github.com/propeopleua/audit_log/issues"
             },
-            "time": "2017-12-20T13:19:33+00:00"
+            "time": "2017-12-21T11:09:56+00:00"
         },
         {
             "name": "nikic/php-parser",
